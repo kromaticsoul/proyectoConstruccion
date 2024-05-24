@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.controllers.VAdvancesStudentsProfesorController">
+   <children>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="240.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icóno.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblStudentFullName" layoutX="278.0" layoutY="71.0" prefHeight="17.0" prefWidth="146.0" text="Alvaro Vázquez Aguirre">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="31.0" prefWidth="792.0" style="-fx-background-color: #002366;">
+         <children>
+            <Label fx:id="lblUV" layoutX="647.0" layoutY="7.0" text="Universidad Veracruzana" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="23.0" layoutY="110.0" prefHeight="367.0" prefWidth="747.0">
+         <content>
+            <VBox fx:id="vBoxLayoutAdvances" prefHeight="367.0" prefWidth="742.0" spacing="10.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="btnReturn" layoutX="699.0" layoutY="499.0" mnemonicParsing="false" onAction="#returnWindow" text="Regresar" />
+   </children>
+</AnchorPane>

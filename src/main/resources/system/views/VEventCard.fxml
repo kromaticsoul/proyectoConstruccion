@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="124.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.controllers.VEventCardController">
+   <children>
+      <Pane prefHeight="124.0" prefWidth="548.0">
+         <children>
+            <Label fx:id="lblTitle" layoutX="29.0" layoutY="14.0" prefHeight="17.0" prefWidth="120.0" text="Titulo event 1">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCreatedDate" layoutX="29.0" layoutY="54.0" text="Fecha creación" />
+            <Label fx:id="lblDueTime" layoutX="29.0" layoutY="82.0" text="Fecha vencimiento" />
+            <Label fx:id="lblEventCreatedDate" layoutX="198.0" layoutY="54.0" text="02 / 05 / 2003" />
+            <Label fx:id="lblEventDueDate" layoutX="198.0" layoutY="82.0" text="02 / 04 / 2003" />
+            <Button fx:id="btnModify" layoutX="380.0" layoutY="70.0" mnemonicParsing="false" style="-fx-background-color: #C5D6A1;" text="Modificar" />
+            <Button fx:id="btnDelete" layoutX="458.0" layoutY="70.0" mnemonicParsing="false" style="-fx-background-color: C1C1C3;" text="Eliminar" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

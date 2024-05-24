@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.controllers.VStudentsCourseController">
+   <children>
+      <Pane layoutX="-4.0" layoutY="-4.0" prefHeight="31.0" prefWidth="792.0" style="-fx-background-color: #002366;">
+         <children>
+            <Label fx:id="lblUV" layoutX="647.0" layoutY="7.0" text="Universidad Veracruzana" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="292.0" layoutY="41.0" prefHeight="30.0" prefWidth="200.0" text="Estudiantes del curso">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="13.0" layoutY="94.0" prefHeight="446.0" prefWidth="777.0">
+         <content>
+            <VBox fx:id="vBoxStudentsLayout" prefHeight="446.0" prefWidth="776.0" spacing="5.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
